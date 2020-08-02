@@ -1,5 +1,28 @@
-# 这是一个 Vue UI 项目
+# 这是一个 Vue UI 轱辘
 
-作者：li123147
+## 作者：li123147
 
-联系方式：986391084@qq.com
+[![Build Status](https://travis-ci.org/li123147/gululu-1.svg?branch=master)](https://travis-ci.org/li123147/gululu-1)
+
+## 介绍
+
+
+## 开始使用
+
+1. 安装
+
+使用本框架前，请在 CSS 中开启 border-box
+
+```
+*{box-sizing: border-box;}
+```
+
+## 文档
+
+## 提问
+
+## 变更记录
+
+## 联系方式
+
+## 贡献代码
