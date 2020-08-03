@@ -32,7 +32,7 @@
   ```
   IE 15 及以上浏览器都支持此样式。
 
-2. 安装 gulu
+2. 安装 gululu
   
   ```
   npm i --save frank-test-1-1
