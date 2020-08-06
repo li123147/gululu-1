@@ -11,7 +11,7 @@ import Sider from "./sider";
 import Content from "./content";
 import Footer from "./footer";
 import Toast from "./toast";
-import Plugin from "./plugin";
+import plugin from "./plugin";
 import Tabs from "./tabs";
 import TabsHead from "./tabs-head";
 import TabsBody from "./tabs-body";
@@ -30,7 +30,7 @@ Vue.component("g-content", Content);
 Vue.component("g-footer", Footer);
 Vue.component("g-sider", Sider);
 Vue.component("g-toast", Toast);
-Vue.use(Plugin);
+Vue.use(plugin);
 Vue.component("g-tabs", Tabs);
 Vue.component("g-tabs-head", TabsHead);
 Vue.component("g-tabs-body", TabsBody);
@@ -38,15 +38,20 @@ Vue.component("g-tabs-item", TabsItem);
 Vue.component("g-tabs-pane", TabsPane);
 
 import createElement from "vue";
+
 const h = createElement;
 
 new Vue({
   el: "#app",
   data: {
-    selectedTab:'sports'
+    selectedTab: "sports",
   },
   created() {},
   methods: {
+    yyy(data) {
+      console.log("yyy");
+      console.log(data);
+    },
     showToast1() {
       this.showToast("top");
     },
