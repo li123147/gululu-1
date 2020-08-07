@@ -2,7 +2,7 @@
   <div class="popover" ref="popover">
     <div ref="contentWrapper" class="content-wrapper" v-if="visible"
       :class="{[`position-${position}`]:true}">
-      <slot name="content"></slot>
+      <slot name="content" :close="close"></slot>
     </div>
     <span ref="triggerWrapper" style="display: inline-block;">
       <slot></slot>
@@ -13,6 +13,22 @@
 <script>
   export default {
     name: "GuluPopover",
+    props: {
+      position: {
+        type: String,
+        default: 'top',
+        validator (value) {
+          return ['top', 'bottom', 'left', 'right'].indexOf(value) >= 0
+        }
+      },
+      trigger: {
+        type: String,
+        default: 'click',
+        validator (value) {
+          return ['click', 'hover'].indexOf(value) >= 0
+        }
+      }
+    },
     data () {
       return {
         visible: false,
@@ -47,22 +63,6 @@
           return 'click'
         } else {
           return 'mouseleave'
-        }
-      }
-    },
-    props: {
-      position: {
-        type: String,
-        default: 'top',
-        validator (value) {
-          return ['top', 'bottom', 'left', 'right'].indexOf(value) >= 0
-        }
-      },
-      trigger: {
-        type: String,
-        default: 'click',
-        validator (value) {
-          return ['click', 'hover'].indexOf(value) >= 0
         }
       }
     },
@@ -169,12 +169,12 @@
         left: 10px;
       }
       &::before {
-        border-bottom: none;
+        border-top: none;
         border-bottom-color: black;
         bottom: 100%;
       }
       &::after {
-        border-bottom: none;
+        border-top: none;
         border-bottom-color: white;
         bottom: calc(100% - 1px);
       }
@@ -188,12 +188,12 @@
       }
       &::before {
         border-left-color: black;
-        border-bottom: none;
+        border-right: none;
         left: 100%;
       }
       &::after {
         border-left-color: white;
-        border-bottom: none;
+        border-right: none;
         left: calc(100% - 1px);
       }
     }
@@ -205,12 +205,12 @@
       }
       &::before {
         border-right-color: black;
-        border-bottom: none;
+        border-left: none;
         right: 100%;
       }
       &::after {
         border-right-color: white;
-        border-bottom: none;
+        border-left: none;
         right: calc(100% - 1px);
       }
     }
