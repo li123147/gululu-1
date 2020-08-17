@@ -12,6 +12,4 @@
   }
 </script>
 <style>
-  .tabs-body {
-  }
 </style>
