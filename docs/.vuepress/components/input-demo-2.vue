@@ -2,7 +2,7 @@
   <div style="padding-top: 16px;">
     <h2>双向绑定</h2>
     <p>
-      <strong>预览</strong>
+      <strong>效果</strong>
     </p>
     <g-input v-model="value"></g-input>
     <div>

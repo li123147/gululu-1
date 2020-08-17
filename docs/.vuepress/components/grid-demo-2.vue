@@ -2,7 +2,7 @@
   <div style="padding-top: 16px;">
     <h2>设置 gutter</h2>
     <p>
-      <strong>预览</strong>
+      <strong>效果</strong>
     </p>
     <g-row class="demoRow" gutter="10">
       <g-col span="8">
@@ -46,7 +46,7 @@
   .demoCol {
     height: 50px;
     border: 1px solid #ccc;
-    background: #eee;
+    background: rgb(153,254,0);
     display: flex;
     justify-content: center;
     align-items: center;

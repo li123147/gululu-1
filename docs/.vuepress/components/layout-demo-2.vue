@@ -2,23 +2,23 @@
   <div style="padding-top: 16px;">
     <h2>布局</h2>
     <p>
-      <strong>预览</strong>
+      <strong>效果</strong>
     </p>
 
 
     <g-layout style="color: white; overflow:hidden; margin-bottom:50px;">
-      <g-header style="height: 50px; background:lightskyblue;">
+      <g-header style="height: 50px; background:rgb(127,194,25);">
         header
       </g-header>
       <g-layout>
-        <g-sider style="height: 100px; background:#ddd; width:200px; color: black;">
+        <g-sider style="height: 100px; background:red; width:200px; color: black;">
           sider
         </g-sider>
-        <g-content style="height: 100px; background:deepskyblue;">
+        <g-content style="height: 100px; background:rgb(3,163,135);">
           content
         </g-content>
       </g-layout>
-      <g-footer style="height: 50px; background:lightskyblue;">
+      <g-footer style="height: 50px; background:rgb(127,194,25);">
         footer
       </g-footer>
     </g-layout>
@@ -45,22 +45,22 @@
     data () {
       return {
         content: `
-          <g-layout style="color: white; overflow:hidden; margin-bottom:50px;">
-            <g-header style="height: 50px; background:lightskyblue;">
-              header
-            </g-header>
-            <g-layout>
-              <g-sider style="height: 100px; background:#ddd; width:200px; color: black;">
-                sider
-              </g-sider>
-              <g-content style="height: 100px; background:deepskyblue;">
-                content
-              </g-content>
-            </g-layout>
-            <g-footer style="height: 50px; background:lightskyblue;">
-              footer
-            </g-footer>
-          </g-layout>
+         <g-layout style="color: white; overflow:hidden; margin-bottom:50px;">
+      <g-header style="height: 50px; background:rgb(127,194,25);">
+        header
+      </g-header>
+      <g-layout>
+        <g-sider style="height: 100px; background:red; width:200px; color: black;">
+          sider
+        </g-sider>
+        <g-content style="height: 100px; background:rgb(3,163,135);">
+          content
+        </g-content>
+      </g-layout>
+      <g-footer style="height: 50px; background:rgb(127,194,25);">
+        footer
+      </g-footer>
+    </g-layout>
       `.replace(/^ {8}/gm, '').trim()
       }
     }

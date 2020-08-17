@@ -28,7 +28,7 @@
 </script>
 <style scoped lang="scss">
   $tab-height: 40px;
-  $blue: blue;
+  $blue: rgb(0,255,1);
   $border-color: #ddd;
   .tabs-head {
     display: flex;

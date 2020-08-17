@@ -2,7 +2,7 @@
   <div style="padding-top: 16px;">
     <h2>24格网格</h2>
     <p>
-      <strong>预览</strong>
+      <strong>效果</strong>
     </p>
     <g-row class="demoRow">
       <g-col span="8">
@@ -104,7 +104,7 @@
   .demoCol {
     height: 50px;
     border: 1px solid #ccc;
-    background: #eee;
+    background: rgb(0,255,255);
     display: flex;
     justify-content: center;
     align-items: center;

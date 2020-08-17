@@ -3,7 +3,7 @@
   <div style="padding-top: 16px;">
     <h2>将触发方式改为 hover</h2>
     <p>
-      <strong>预览</strong>
+      <strong>效果</strong>
     </p>
 
     <g-popover trigger="hover">

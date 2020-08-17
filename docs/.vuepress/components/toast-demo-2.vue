@@ -2,7 +2,7 @@
   <div style="padding-top: 16px;">
     <h2>设置关闭按钮</h2>
     <p>
-      <strong>预览</strong>
+      <strong>效果</strong>
     </p>
 
     <div>

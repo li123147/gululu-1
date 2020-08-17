@@ -2,7 +2,7 @@
   <div style="padding-top: 16px;">
     <h2>支持 HTML</h2>
     <p>
-      <strong>预览</strong>
+      <strong>效果</strong>
     </p>
 
     <div>
@@ -45,11 +45,11 @@
           </div>
           methods: {
             onClickButton () {
-              this.$toast('你知道我在等你吗？', {
+              this.$toast('你知道最强的武器是什么吗？', {
                 closeButton: {
-                  text: '知道了',
+                  text: '是补丁',
                   callback: () => {
-                    console.log('他说知道了')
+                    console.log('没错，就是补丁')
                   }
                 }
               })

@@ -1,9 +1,8 @@
-  
-<template>
+  <template>
   <div style="padding-top: 16px;">
     <h2>简单用法</h2>
     <p>
-      <strong>预览</strong>
+      <strong>效果</strong>
     </p>
     <g-tabs :selected="selected">
       <g-tabs-head>
@@ -11,8 +10,8 @@
         <g-tabs-item name="2">2</g-tabs-item>
       </g-tabs-head>
       <g-tabs-body>
-        <g-tabs-pane name="1">content 1</g-tabs-pane>
-        <g-tabs-pane name="2">content 2</g-tabs-pane>
+        <g-tabs-pane name="1" class="one">标记 1</g-tabs-pane>
+        <g-tabs-pane name="2" class="two">标记 2</g-tabs-pane>
       </g-tabs-body>
     </g-tabs>
 
@@ -22,6 +21,14 @@
     <pre><code>{{content}}</code></pre>
   </div>
 </template>
+<style lang="scss" scoped>
+.one{
+  color:rgb(8,197,255);
+}
+.two{
+  color:rgb(254,0,0) ;
+}
+</style>
 <script>
   import GTabs from '../../../src/tabs'
   import GTabsBody from '../../../src/tabs-body'
