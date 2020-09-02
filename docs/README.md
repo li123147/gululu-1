@@ -1,4 +1,4 @@
-![Image text](https://github.com/li123147/gululu-1/blob/master/images/3.png)
+![Image text](https://raw.githubusercontent.com/li123147/gululu-1/master/images/3.png)
 
 # 轱辘 UI 官网
 
